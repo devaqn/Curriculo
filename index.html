@@ -18,7 +18,7 @@
 
             <div class="header-info">
                 <h1>Pedro Miguel Aquino Costa Gomes</h1>
-                <h2>Desenvolvedor Back-end | Node.js | React.js | MySQL</h2>
+                <h2>Desenvolvedor Full Stack | Node.js | TypeScript | Next.js | React | Flutter | Python | IA Generativa</h2>
                 <p style="color: #cbd5e1; font-size: 0.9rem;">
                     <i class="fas fa-map-marker-alt"></i> Recife, Pernambuco, Brasil
                 </p>
@@ -37,21 +37,24 @@
                 <section class="section">
                     <h3>Sobre Mim</h3>
                     <p>
-                        Desenvolvedor com foco principal em <strong>Back-end</strong>, mas com experiência prática 
-                        em Front-end quando o projeto demanda. Gosto de trabalhar na construção de APIs robustas, 
-                        gerenciamento de bancos de dados e arquitetura de sistemas, mas consigo desenvolver bem 
-                        no front dependendo do que precisar fazer.
+                        Desenvolvedor <strong>Full Stack</strong> com foco em <strong>Back-end</strong>, especializado na construção de
+                        <strong>plataformas SaaS multi-tenant</strong>, <strong>APIs RESTful</strong>, <strong>chatbots com IA generativa</strong>
+                        e <strong>automação de processos</strong>. Experiência sólida com <strong>Node.js</strong>, <strong>TypeScript</strong>,
+                        <strong>Next.js</strong>, <strong>React</strong>, <strong>Flutter</strong>, <strong>Python</strong> e <strong>FastAPI</strong>,
+                        desenvolvendo soluções completas do back-end ao front-end, mobile e infraestrutura cloud.
                     </p>
                     <p>
-                        Tenho experiência no desenvolvimento de <strong>bots inteligentes</strong> e integração com APIs 
-                        de terceiros, incluindo implementação de IA para automação financeira no WhatsApp. Além disso, 
-                        possuo habilidades práticas em manutenção de hardware, tendo trabalhado informalmente em faculdade, 
-                        empresa de fotografia e atendimentos autônomos.
+                        Integração com <strong>LLMs (Claude/Anthropic, OpenAI GPT-4o, Google Gemini)</strong> para pipelines de
+                        <strong>RAG com pgvector</strong>, classificação automática de leads, lead scoring e SDR virtual via WhatsApp.
+                        Arquitetura com <strong>PostgreSQL + Redis + RabbitMQ/BullMQ</strong>, comunicação em tempo real via
+                        <strong>WebSocket/Socket.io</strong>, pagamentos com <strong>Stripe</strong> e <strong>Mercado Pago</strong>,
+                        e infraestrutura com <strong>Docker</strong>, <strong>Terraform (AWS)</strong> e <strong>GitHub Actions CI/CD</strong>.
                     </p>
                     <p>
-                        Facilidade para trabalhar em equipe, resolver problemas complexos e me adaptar rapidamente a novas 
-                        tecnologias. Experiência com ambientes Linux e Ubuntu Server, desenvolvimento de CRUDs completos 
-                        e trabalho com metodologia ágil Scrum.
+                        Portfólio com <strong>70+ repositórios</strong> no GitHub, incluindo 2 plataformas SaaS enterprise-grade com
+                        <strong>multi-tenancy (RLS)</strong>, <strong>RBAC</strong>, <strong>LGPD compliance</strong> e testes automatizados
+                        (<strong>Vitest</strong>, <strong>Playwright E2E</strong>). Facilidade para trabalhar em equipe, resolver
+                        problemas complexos e aplicar <strong>Clean Architecture</strong> e metodologia ágil <strong>Scrum</strong>.
                     </p>
                 </section>
 
@@ -60,33 +63,45 @@
                     <p class="subtitle">
                         <em>Projetos desenvolvidos durante formação acadêmica, estudos pessoais e experiências profissionais. Código-fonte disponível no GitHub.</em>
                     </p>
-                    
+
                     <div class="edu-item">
-                        <h4>IA Financeira WhatsApp Bot (VPS & Termux)</h4>
-                        <span>Tecnologias: Node.js, WhatsApp API, Python</span>
-                        <p class="edu-desc">Bot inteligente para WhatsApp com IA para gestão financeira pessoal. Implementado tanto em VPS quanto em versão Termux para Android, com automação de respostas e análise de dados financeiros.</p>
+                        <h4>AI Sales OS — Plataforma SaaS de Vendas com IA</h4>
+                        <span>Next.js 15, Express 5, Python/FastAPI, PostgreSQL+pgvector, Redis, RabbitMQ, Claude/GPT-4o, Terraform AWS</span>
+                        <p class="edu-desc">CRM completo com pipeline Kanban, inbox WhatsApp unificada e SDR virtual com IA. Motor de IA com 8 capacidades (RAG, lead scoring, follow-up inteligente, análise de sentimentos). Multi-tenant com RLS, RBAC, LGPD, JWT RS256 e 2FA. Deploy via Terraform (ECS Fargate, RDS, ElastiCache). 72 testes automatizados.</p>
                     </div>
 
                     <div class="edu-item">
-                        <h4>Sistema de Sushi E-Commerce</h4>
-                        <span>Tecnologias: React.js, Node.js, MySQL</span>
-                        <p class="edu-desc">Plataforma completa de delivery com carrinho de compras, gestão de pedidos e interface responsiva. Sistema de pagamento em desenvolvimento.</p>
+                        <h4>AI Customer Support OS — Atendimento ao Cliente com IA</h4>
+                        <span>Next.js 14, Fastify 5, PostgreSQL+pgvector, Redis, BullMQ, Socket.io, Stripe, Turborepo</span>
+                        <p class="edu-desc">Plataforma SaaS de atendimento com IA autônoma via RAG. Inbox em tempo real (WebSocket), supervisor IA, quality score, CRM integrado e billing com Stripe. Pipeline: Claude → GPT-4o → Gemini com fallback automático. Testes E2E com Playwright, security scanning OWASP ZAP. Deploy Vercel + Railway.</p>
                     </div>
 
                     <div class="edu-item">
-                        <h4>Central de Denúncias</h4>
-                        <span>Tecnologias: Node.js, MySQL, Tailwind CSS</span>
-                        <p class="edu-desc">Sistema web para registro e acompanhamento de denúncias com painel administrativo e gestão de casos.</p>
+                        <h4>Dom Severu's Barbearia — App de Gestão Completo</h4>
+                        <span>Flutter 3.x, Dart, Firebase Auth, Cloud Firestore, SQLite (15 tabelas, v16), Mercado Pago</span>
+                        <p class="edu-desc">App mobile multi-usuário (v10.1.0) com comandas, caixa, estoque com custo médio ponderado, agenda com detecção de conflito, assinaturas via Mercado Pago e sincronização Firestore em tempo real com fallback offline SQLite. RBAC admin/barbeiro, export PDF/CSV/Excel.</p>
                     </div>
 
                     <div class="edu-item">
-                        <h4>E-Commerce Loja de Roupas</h4>
-                        <span>Tecnologias: Java, MySQL</span>
-                        <p class="edu-desc">Sistema completo de e-commerce com gerenciamento de produtos, carrinho e controle de estoque.</p>
+                        <h4>Bot Command Center — Painel DevOps Self-Hosted</h4>
+                        <span>Node.js, Express, SQLite, PM2 API, WebSocket, xterm.js, Chart.js, OWASP ZAP, Baileys</span>
+                        <p class="edu-desc">Painel web para gerenciar, monitorar e fazer deploy de bots Node.js via PM2. Métricas em tempo real (CPU/RAM/rede), terminal SSH no navegador com whitelist de comandos, scan de segurança OWASP, alertas WhatsApp e deploy via upload de ZIP. RBAC com 3 perfis e audit log.</p>
+                    </div>
+
+                    <div class="edu-item">
+                        <h4>Anny Makes — E-Commerce com AI Chatbot</h4>
+                        <span>Next.js 14, Express 5, PostgreSQL+pgvector, Prisma 5, Stripe, Mercado Pago, Claude AI, Cloudflare R2, Turborepo</span>
+                        <p class="edu-desc">E-commerce full-stack com chatbot IA (Claude), pagamentos Stripe + Mercado Pago (PIX/boleto), carrinho abandonado com recovery automático (Bull + Redis), e-mails transacionais (React Email + Resend), WhatsApp (Z-API) e storage Cloudflare R2.</p>
+                    </div>
+
+                    <div class="edu-item">
+                        <h4>Sushi House — Delivery com Pagamento Integrado</h4>
+                        <span>React 18, TypeScript, Vite, Tailwind, shadcn/ui, Express 5, Mercado Pago SDK</span>
+                        <p class="edu-desc">E-commerce de delivery com 70+ produtos, checkout com PIX (QR Code) e cartão (tokenização PCI DSS), rastreamento de pedidos em tempo real, cálculo de frete por geocodificação, notificações por e-mail (SMTP) e SMS (Twilio), e impressão térmica ESC/POS.</p>
                     </div>
 
                     <a href="https://github.com/devaqn" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver Portfólio Completo
+                        <i class="fab fa-github"></i> Ver Portfólio Completo (70+ Repositórios)
                     </a>
                 </section>
             </div>
@@ -94,63 +109,112 @@
             <div class="right-column">
                 <section class="section">
                     <h3>Habilidades</h3>
-                    
+
                     <h4>Back-end & Banco de Dados</h4>
                     <div class="skills-container">
                         <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Fastify</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">pgvector</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
                         <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Prisma ORM</span>
+                        <span class="skill-tag">Knex.js</span>
                         <span class="skill-tag">APIs RESTful</span>
-                        <span class="skill-tag">WhatsApp API</span>
+                        <span class="skill-tag">WebSocket</span>
+                        <span class="skill-tag">Socket.io</span>
+                        <span class="skill-tag">BullMQ</span>
+                        <span class="skill-tag">RabbitMQ</span>
                     </div>
 
-                    <h4>Front-end</h4>
+                    <h4>Front-end & Mobile</h4>
                     <div class="skills-container">
                         <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">shadcn/ui</span>
+                        <span class="skill-tag">Zustand</span>
+                        <span class="skill-tag">TanStack Query</span>
+                        <span class="skill-tag">Vite</span>
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Tailwind CSS</span>
                     </div>
 
-                    <h4>Ferramentas & Outros</h4>
+                    <h4>IA & Integrações</h4>
                     <div class="skills-container">
+                        <span class="skill-tag">Claude (Anthropic)</span>
+                        <span class="skill-tag">OpenAI GPT-4o</span>
+                        <span class="skill-tag">Google Gemini</span>
+                        <span class="skill-tag">RAG / Embeddings</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">WhatsApp API</span>
+                        <span class="skill-tag">Baileys</span>
+                        <span class="skill-tag">Stripe</span>
+                        <span class="skill-tag">Mercado Pago</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Resend</span>
+                        <span class="skill-tag">Twilio</span>
+                        <span class="skill-tag">Cloudflare R2</span>
+                    </div>
+
+                    <h4>DevOps & Arquitetura</h4>
+                    <div class="skills-container">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform (AWS)</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Turborepo</span>
+                        <span class="skill-tag">PM2</span>
+                        <span class="skill-tag">Linux / VPS</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Netlify</span>
+                        <span class="skill-tag">Railway</span>
+                        <span class="skill-tag">Multi-tenancy (RLS)</span>
+                        <span class="skill-tag">RBAC / JWT</span>
+                        <span class="skill-tag">LGPD</span>
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">Vitest</span>
+                        <span class="skill-tag">Playwright</span>
+                        <span class="skill-tag">OWASP ZAP</span>
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Ubuntu Server</span>
-                        <span class="skill-tag">VPS</span>
-                        <span class="skill-tag">Termux</span>
-                        <span class="skill-tag">Eclipse</span>
                         <span class="skill-tag">Scrum</span>
-                        <span class="skill-tag">CRUD</span>
                     </div>
                 </section>
 
                 <section class="section">
                     <h3>Experiência Profissional</h3>
-                    
+
                     <div class="edu-item">
-                        <h4>Técnico de Manutenção de Computadores</h4>
-                        <span>Faculdade Unopar Anhanguera</span>
-                        <span>Trabalho Informal</span>
-                        <p class="edu-desc">Manutenção preventiva e corretiva de computadores, diagnóstico de problemas de hardware e software, suporte técnico aos usuários.</p>
+                        <h4>Desenvolvedor Full Stack — Freelancer</h4>
+                        <span>Projetos para Clientes e Produtos Próprios</span>
+                        <span>Trabalho Autônomo</span>
+                        <p class="edu-desc">Desenvolvimento de plataformas SaaS multi-tenant com IA (Claude, GPT-4o, Gemini), pipelines RAG com pgvector, CRMs, e-commerces com Stripe/Mercado Pago, apps mobile Flutter com Firebase, chatbots WhatsApp, painel DevOps com terminal SSH e security scanning OWASP. Site institucional em produção (integrapsicanalise.com). Deploy com Docker, Terraform AWS, Vercel e Netlify.</p>
                     </div>
 
                     <div class="edu-item">
                         <h4>Técnico de Informática</h4>
-                        <span>Empresa de Fotografia</span>
+                        <span>Faculdade Unopar Anhanguera + Empresa de Fotografia</span>
                         <span>Trabalho Informal</span>
-                        <p class="edu-desc">Manutenção de equipamentos, configuração de sistemas, suporte técnico e serviços de TI.</p>
+                        <p class="edu-desc">Manutenção preventiva e corretiva de hardware, automação de cadastro de clientes com Python e Selenium (Conta Azul), configuração de sistemas e suporte técnico.</p>
                     </div>
 
                     <div class="edu-item">
-                        <h4>Freelancer - Serviços de Informática</h4>
+                        <h4>Freelancer — Serviços de TI</h4>
                         <span>Atendimento Particular</span>
                         <span>Trabalho Autônomo</span>
-                        <p class="edu-desc">Instalação e configuração de sistemas operacionais (Windows/Linux), formatação completa, configuração de redes domésticas e empresariais, manutenção preventiva e corretiva de hardware, limpeza física de notebooks e desktops, troca de componentes (HD, SSD, memória RAM, coolers), remoção de vírus e malwares, otimização de desempenho e recuperação de dados.</p>
+                        <p class="edu-desc">Configuração de servidores Linux, redes, manutenção de hardware (SSD, RAM), otimização de desempenho e recuperação de dados.</p>
                     </div>
                 </section>
 
@@ -172,10 +236,15 @@
 
                 <section class="section">
                     <h3>Certificações</h3>
-                    
+
                     <div class="edu-item">
                         <h4>Profissionalizante Back-end</h4>
-                        <span>TEC-Desenvolvimento De Sistemas</span>
+                        <span>TEC — Desenvolvimento de Sistemas</span>
+                    </div>
+
+                    <div class="edu-item">
+                        <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                        <span>SENAI PE — Areias</span>
                     </div>
                 </section>
                 
