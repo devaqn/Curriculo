@@ -1,17 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    const btnImprimir = document.getElementById('btn-imprimir');
-    
-    if (btnImprimir) {
-        btnImprimir.addEventListener('click', () => {
-            window.print();
-        });
-    }
-
-    const foto = document.getElementById('foto-perfil');
-    if(foto) {
-        foto.addEventListener('click', () => {
-            alert("Este é o perfil de Pedro Miguel - Desenvolvedor Back-end!");
-        });
-    }
+  // O @media print do style.css troca para tema claro, entao a caixa de
+  // impressao do navegador ja gera o PDF pronto para enviar.
+  const btn = document.getElementById('btn-imprimir');
+  if (btn) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.print();
+    });
+  }
 });

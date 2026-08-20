@@ -1,260 +1,323 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Pedro Miguel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Miguel — Back-End Developer | APIs, Automação e IA</title>
+  <meta name="description" content="Currículo de Pedro Miguel Aquino Costa Gomes — Back-End Developer em Recife/PE. APIs, automação com WhatsApp, integrações com IA e plataformas SaaS multi-tenant." />
+  <meta name="author" content="Pedro Miguel Aquino Costa Gomes" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Pedro Miguel — Back-End Developer" />
+  <meta property="og:description" content="APIs, automação e sistemas com IA. Node.js, TypeScript, PostgreSQL, Supabase e bots de WhatsApp." />
+  <meta property="og:image" content="perfil.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <img src="perfil.jpg" alt="Foto de Pedro Miguel" class="profile-img" id="foto-perfil">
+<header class="hero">
+  <div class="hero-inner">
+    <img class="avatar" src="perfil.jpg" alt="Pedro Miguel Aquino Costa Gomes" />
+    <div>
+      <h1>Pedro Miguel Aquino Costa Gomes</h1>
+      <p class="role">Back-End Developer — APIs, Automação e IA</p>
+      <ul class="contact">
+        <li><span>📍 Recife, Pernambuco, Brasil</span></li>
+        <li><a href="mailto:pedromiguelaqn@gmail.com">✉️ pedromiguelaqn@gmail.com</a></li>
+        <li><a href="https://wa.me/5581998191625" target="_blank" rel="noopener">💬 (81) 99819-1625</a></li>
+        <li><a href="https://github.com/devaqn" target="_blank" rel="noopener">🐙 github.com/devaqn</a></li>
+        <li><a href="https://linkedin.com/in/pedro-miguel" target="_blank" rel="noopener">💼 linkedin.com/in/pedro-miguel</a></li>
+        <li><a href="https://portfoliodevaqn.netlify.app" target="_blank" rel="noopener">🌐 Portfólio</a></li>
+        <li><a id="btn-imprimir" href="#" role="button">⬇️ Salvar em PDF</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-            <div class="header-info">
-                <h1>Pedro Miguel Aquino Costa Gomes</h1>
-                <h2>Desenvolvedor Full Stack | Node.js | TypeScript | Next.js | React | Flutter | Python | IA Generativa</h2>
-                <p style="color: #cbd5e1; font-size: 0.9rem;">
-                    <i class="fas fa-map-marker-alt"></i> Recife, Pernambuco, Brasil
-                </p>
-            </div>
-            
-            <div class="contact-links">
-                <a href="mailto:pedromiguelaqn@gmail.com"><i class="fas fa-envelope"></i> pedromiguelaqn@gmail.com</a>
-                <a href="https://wa.me/5581998191625"><i class="fas fa-phone"></i> (81) 99819-1625</a>
-                <a href="https://github.com/devaqn" target="_blank"><i class="fab fa-github"></i> github.com/devaqn</a>
-                <a href="https://www.linkedin.com/in/pedro-miguel-5b66a72b5/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/pedro-miguel</a>
-            </div>
-        </header>
+<main class="wrap">
 
-        <div class="main-content">
-            <div class="left-column">
-                <section class="section">
-                    <h3>Sobre Mim</h3>
-                    <p>
-                        Desenvolvedor <strong>Full Stack</strong> com foco em <strong>Back-end</strong>, especializado na construção de
-                        <strong>plataformas SaaS multi-tenant</strong>, <strong>APIs RESTful</strong>, <strong>chatbots com IA generativa</strong>
-                        e <strong>automação de processos</strong>. Experiência sólida com <strong>Node.js</strong>, <strong>TypeScript</strong>,
-                        <strong>Next.js</strong>, <strong>React</strong>, <strong>Flutter</strong>, <strong>Python</strong> e <strong>FastAPI</strong>,
-                        desenvolvendo soluções completas do back-end ao front-end, mobile e infraestrutura cloud.
-                    </p>
-                    <p>
-                        Integração com <strong>LLMs (Claude/Anthropic, OpenAI GPT-4o, Google Gemini)</strong> para pipelines de
-                        <strong>RAG com pgvector</strong>, classificação automática de leads, lead scoring e SDR virtual via WhatsApp.
-                        Arquitetura com <strong>PostgreSQL + Redis + RabbitMQ/BullMQ</strong>, comunicação em tempo real via
-                        <strong>WebSocket/Socket.io</strong>, pagamentos com <strong>Stripe</strong> e <strong>Mercado Pago</strong>,
-                        e infraestrutura com <strong>Docker</strong>, <strong>Terraform (AWS)</strong> e <strong>GitHub Actions CI/CD</strong>.
-                    </p>
-                    <p>
-                        Portfólio com <strong>70+ repositórios</strong> no GitHub, incluindo 2 plataformas SaaS enterprise-grade com
-                        <strong>multi-tenancy (RLS)</strong>, <strong>RBAC</strong>, <strong>LGPD compliance</strong> e testes automatizados
-                        (<strong>Vitest</strong>, <strong>Playwright E2E</strong>). Facilidade para trabalhar em equipe, resolver
-                        problemas complexos e aplicar <strong>Clean Architecture</strong> e metodologia ágil <strong>Scrum</strong>.
-                    </p>
-                </section>
+  <div class="stats">
+    <div class="stat"><b>90+</b><small>REPOSITÓRIOS</small></div>
+    <div class="stat"><b>58</b><small>PÚBLICOS</small></div>
+    <div class="stat"><b>15+</b><small>FERRAMENTAS OPEN SOURCE</small></div>
+  </div>
 
-                <section class="section">
-                    <h3>Projetos em Destaque</h3>
-                    <p class="subtitle">
-                        <em>Projetos desenvolvidos durante formação acadêmica, estudos pessoais e experiências profissionais. Código-fonte disponível no GitHub.</em>
-                    </p>
+  <div class="layout">
 
-                    <div class="edu-item">
-                        <h4>AI Sales OS — Plataforma SaaS de Vendas com IA</h4>
-                        <span>Next.js 15, Express 5, Python/FastAPI, PostgreSQL+pgvector, Redis, RabbitMQ, Claude/GPT-4o, Terraform AWS</span>
-                        <p class="edu-desc">CRM completo com pipeline Kanban, inbox WhatsApp unificada e SDR virtual com IA. Motor de IA com 8 capacidades (RAG, lead scoring, follow-up inteligente, análise de sentimentos). Multi-tenant com RLS, RBAC, LGPD, JWT RS256 e 2FA. Deploy via Terraform (ECS Fargate, RDS, ElastiCache). 72 testes automatizados.</p>
-                    </div>
+    <!-- ============================ coluna principal ============================ -->
+    <div>
 
-                    <div class="edu-item">
-                        <h4>AI Customer Support OS — Atendimento ao Cliente com IA</h4>
-                        <span>Next.js 14, Fastify 5, PostgreSQL+pgvector, Redis, BullMQ, Socket.io, Stripe, Turborepo</span>
-                        <p class="edu-desc">Plataforma SaaS de atendimento com IA autônoma via RAG. Inbox em tempo real (WebSocket), supervisor IA, quality score, CRM integrado e billing com Stripe. Pipeline: Claude → GPT-4o → Gemini com fallback automático. Testes E2E com Playwright, security scanning OWASP ZAP. Deploy Vercel + Railway.</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Dom Severu's Barbearia — App de Gestão Completo</h4>
-                        <span>Flutter 3.x, Dart, Firebase Auth, Cloud Firestore, SQLite (15 tabelas, v16), Mercado Pago</span>
-                        <p class="edu-desc">App mobile multi-usuário (v10.1.0) com comandas, caixa, estoque com custo médio ponderado, agenda com detecção de conflito, assinaturas via Mercado Pago e sincronização Firestore em tempo real com fallback offline SQLite. RBAC admin/barbeiro, export PDF/CSV/Excel.</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Bot Command Center — Painel DevOps Self-Hosted</h4>
-                        <span>Node.js, Express, SQLite, PM2 API, WebSocket, xterm.js, Chart.js, OWASP ZAP, Baileys</span>
-                        <p class="edu-desc">Painel web para gerenciar, monitorar e fazer deploy de bots Node.js via PM2. Métricas em tempo real (CPU/RAM/rede), terminal SSH no navegador com whitelist de comandos, scan de segurança OWASP, alertas WhatsApp e deploy via upload de ZIP. RBAC com 3 perfis e audit log.</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Anny Makes — E-Commerce com AI Chatbot</h4>
-                        <span>Next.js 14, Express 5, PostgreSQL+pgvector, Prisma 5, Stripe, Mercado Pago, Claude AI, Cloudflare R2, Turborepo</span>
-                        <p class="edu-desc">E-commerce full-stack com chatbot IA (Claude), pagamentos Stripe + Mercado Pago (PIX/boleto), carrinho abandonado com recovery automático (Bull + Redis), e-mails transacionais (React Email + Resend), WhatsApp (Z-API) e storage Cloudflare R2.</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Sushi House — Delivery com Pagamento Integrado</h4>
-                        <span>React 18, TypeScript, Vite, Tailwind, shadcn/ui, Express 5, Mercado Pago SDK</span>
-                        <p class="edu-desc">E-commerce de delivery com 70+ produtos, checkout com PIX (QR Code) e cartão (tokenização PCI DSS), rastreamento de pedidos em tempo real, cálculo de frete por geocodificação, notificações por e-mail (SMTP) e SMS (Twilio), e impressão térmica ESC/POS.</p>
-                    </div>
-
-                    <a href="https://github.com/devaqn" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver Portfólio Completo (70+ Repositórios)
-                    </a>
-                </section>
-            </div>
-
-            <div class="right-column">
-                <section class="section">
-                    <h3>Habilidades</h3>
-
-                    <h4>Back-end & Banco de Dados</h4>
-                    <div class="skills-container">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Fastify</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">pgvector</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Prisma ORM</span>
-                        <span class="skill-tag">Knex.js</span>
-                        <span class="skill-tag">APIs RESTful</span>
-                        <span class="skill-tag">WebSocket</span>
-                        <span class="skill-tag">Socket.io</span>
-                        <span class="skill-tag">BullMQ</span>
-                        <span class="skill-tag">RabbitMQ</span>
-                    </div>
-
-                    <h4>Front-end & Mobile</h4>
-                    <div class="skills-container">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">shadcn/ui</span>
-                        <span class="skill-tag">Zustand</span>
-                        <span class="skill-tag">TanStack Query</span>
-                        <span class="skill-tag">Vite</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                    </div>
-
-                    <h4>IA & Integrações</h4>
-                    <div class="skills-container">
-                        <span class="skill-tag">Claude (Anthropic)</span>
-                        <span class="skill-tag">OpenAI GPT-4o</span>
-                        <span class="skill-tag">Google Gemini</span>
-                        <span class="skill-tag">RAG / Embeddings</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">WhatsApp API</span>
-                        <span class="skill-tag">Baileys</span>
-                        <span class="skill-tag">Stripe</span>
-                        <span class="skill-tag">Mercado Pago</span>
-                        <span class="skill-tag">Selenium</span>
-                        <span class="skill-tag">Resend</span>
-                        <span class="skill-tag">Twilio</span>
-                        <span class="skill-tag">Cloudflare R2</span>
-                    </div>
-
-                    <h4>DevOps & Arquitetura</h4>
-                    <div class="skills-container">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Terraform (AWS)</span>
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">Turborepo</span>
-                        <span class="skill-tag">PM2</span>
-                        <span class="skill-tag">Linux / VPS</span>
-                        <span class="skill-tag">Vercel</span>
-                        <span class="skill-tag">Netlify</span>
-                        <span class="skill-tag">Railway</span>
-                        <span class="skill-tag">Multi-tenancy (RLS)</span>
-                        <span class="skill-tag">RBAC / JWT</span>
-                        <span class="skill-tag">LGPD</span>
-                        <span class="skill-tag">Clean Architecture</span>
-                        <span class="skill-tag">Vitest</span>
-                        <span class="skill-tag">Playwright</span>
-                        <span class="skill-tag">OWASP ZAP</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Scrum</span>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h3>Experiência Profissional</h3>
-
-                    <div class="edu-item">
-                        <h4>Desenvolvedor Full Stack — Freelancer</h4>
-                        <span>Projetos para Clientes e Produtos Próprios</span>
-                        <span>Trabalho Autônomo</span>
-                        <p class="edu-desc">Desenvolvimento de plataformas SaaS multi-tenant com IA (Claude, GPT-4o, Gemini), pipelines RAG com pgvector, CRMs, e-commerces com Stripe/Mercado Pago, apps mobile Flutter com Firebase, chatbots WhatsApp, painel DevOps com terminal SSH e security scanning OWASP. Site institucional em produção (integrapsicanalise.com). Deploy com Docker, Terraform AWS, Vercel e Netlify.</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Técnico de Informática</h4>
-                        <span>Faculdade Unopar Anhanguera + Empresa de Fotografia</span>
-                        <span>Trabalho Informal</span>
-                        <p class="edu-desc">Manutenção preventiva e corretiva de hardware, automação de cadastro de clientes com Python e Selenium (Conta Azul), configuração de sistemas e suporte técnico.</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Freelancer — Serviços de TI</h4>
-                        <span>Atendimento Particular</span>
-                        <span>Trabalho Autônomo</span>
-                        <p class="edu-desc">Configuração de servidores Linux, redes, manutenção de hardware (SSD, RAM), otimização de desempenho e recuperação de dados.</p>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h3>Formação Acadêmica</h3>
-                    
-                    <div class="edu-item">
-                        <h4>SENAI PE</h4>
-                        <span>Técnico em Análise e Desenvolvimento de Sistemas</span>
-                        <span>Jun 2024 – Dez 2025</span>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>UNIFBV</h4>
-                        <span>Bacharelado em Análise e Desenvolvimento de Sistemas</span>
-                        <span>2º Período - Em andamento</span>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h3>Certificações</h3>
-
-                    <div class="edu-item">
-                        <h4>Profissionalizante Back-end</h4>
-                        <span>TEC — Desenvolvimento de Sistemas</span>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>Técnico em Desenvolvimento de Sistemas</h4>
-                        <span>SENAI PE — Areias</span>
-                    </div>
-                </section>
-                
-                <button id="btn-imprimir" class="btn-print">
-                    <i class="fas fa-print"></i> Baixar PDF / Imprimir
-                </button>
-            </div>
+      <section>
+        <h2>Sobre mim</h2>
+        <div class="card">
+          <p>
+            Desenvolvedor com foco em <strong>back-end</strong>, especializado em APIs,
+            automação de processos e integrações com IA generativa. Construo desde bots de
+            WhatsApp e painéis internos até plataformas SaaS multi-tenant — do protótipo à
+            produção, incluindo o deploy e o monitoramento.
+          </p>
+          <p style="margin-top:10px">
+            Trabalho principalmente com <strong>Node.js e TypeScript</strong>,
+            <strong>PostgreSQL/Supabase</strong> e <strong>Python</strong>, integrando LLMs
+            (Claude, GPT-4o, Gemini) em pipelines de RAG com pgvector, classificação de leads
+            e agentes de atendimento. No mobile, uso <strong>Flutter com Firebase</strong>.
+            Na infraestrutura, VPS Linux com Nginx, PM2, Docker e GitHub Actions.
+          </p>
+          <p style="margin-top:10px">
+            Boa parte do meu trabalho atende <strong>pequenos negócios brasileiros</strong> —
+            barbearias, restaurantes, consultórios, tabacarias — o que me deu experiência
+            prática com Pix e checkout via Mercado Pago, Asaas e Open Finance (Pluggy),
+            além de cuidado com formatação de moeda, máscaras e validações locais.
+          </p>
         </div>
+      </section>
+
+      <section>
+        <h2>Projetos em destaque</h2>
+
+        <div class="card featured">
+          <span class="tag-featured">Projeto-bandeira</span>
+          <h3>AI Sales OS — Plataforma SaaS de Vendas com IA</h3>
+          <p class="meta">SaaS · Back-end · IA</p>
+          <p>
+            CRM multi-tenant com pipeline Kanban, inbox de WhatsApp unificada e SDR virtual
+            de IA. Motor com 8 capacidades (RAG, lead scoring, follow-up, análise de
+            sentimento) e fallback automático entre provedores de LLM. Multi-tenancy com RLS,
+            RBAC de 5 perfis, 2FA, conformidade LGPD e 72 testes automatizados.
+          </p>
+          <div class="stack">
+            <span>Next.js</span><span>Express</span><span>FastAPI</span><span>PostgreSQL</span>
+            <span>pgvector</span><span>Redis</span><span>RabbitMQ</span><span>Terraform AWS</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>AI Customer Support OS — Atendimento com IA</h3>
+          <p class="meta">SaaS · Back-end · IA</p>
+          <p>
+            Plataforma de atendimento com IA autônoma via RAG e citação de fontes. Inbox em
+            tempo real por WebSocket, supervisor de IA, quality score automático por conversa,
+            CRM integrado e billing com Stripe. Testes E2E com Playwright, carga com k6 e
+            varredura de segurança com OWASP ZAP.
+          </p>
+          <div class="stack">
+            <span>Next.js</span><span>Fastify</span><span>Prisma</span><span>Socket.io</span>
+            <span>BullMQ</span><span>Stripe</span><span>Playwright</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Bot Command Center — Painel DevOps Self-Hosted</h3>
+          <p class="meta">DevOps · Back-end</p>
+          <p>
+            Painel para gerenciar, monitorar e publicar bots Node.js via PM2. Métricas de
+            CPU/RAM/rede em tempo real, terminal SSH no navegador com whitelist de comandos,
+            deploy por upload de ZIP e alertas no WhatsApp quando um bot cai. RBAC de 3
+            perfis com audit log completo.
+          </p>
+          <div class="stack">
+            <span>Node.js</span><span>WebSocket</span><span>PM2 API</span><span>xterm.js</span>
+            <span>Chart.js</span><span>OWASP ZAP</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>GranaZap — Finanças Pessoais no WhatsApp</h3>
+          <p class="meta">Open Source · Automação · IA</p>
+          <p>
+            Assistente financeiro que vive no WhatsApp: conecta a conta bancária via Open
+            Finance, categoriza cada transação com IA e responde perguntas sobre a vida
+            financeira do usuário. Sem painel para acessar, sem planilha para manter.
+          </p>
+          <div class="stack">
+            <span>TypeScript</span><span>Baileys</span><span>Pluggy</span><span>Claude AI</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Dom Severu's Barbearia — App de Gestão</h3>
+          <p class="meta">Mobile · Multi-tenant</p>
+          <p>
+            App multiusuário de gestão para barbearias: comandas, caixa, estoque com custo
+            médio ponderado, agenda com detecção de conflito e assinaturas via Mercado Pago.
+            Sincronização em tempo real com Firestore e fallback offline em SQLite, com
+            exportação em PDF, CSV e Excel.
+          </p>
+          <div class="stack">
+            <span>Flutter</span><span>Dart</span><span>Firebase Auth</span>
+            <span>Cloud Firestore</span><span>SQLite</span><span>Mercado Pago</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Ferramentas open source para pequenos negócios</h3>
+          <p class="meta">Open Source · 15+ repositórios públicos</p>
+          <p>
+            Família de utilitários publicados no GitHub, todos voltados ao mercado brasileiro:
+            <strong>MesaZap</strong> (cardápio por QR que envia o pedido ao WhatsApp da cozinha),
+            <strong>LojaPix</strong> (storefront de delivery com checkout Pix),
+            <strong>BookViaZap</strong> (widget de agendamento embutível),
+            <strong>BotOps</strong> (observabilidade multi-tenant para bots Baileys),
+            <strong>BR-Utils-API</strong> (CPF, CNPJ, CEP e Pix Copia-e-Cola, sem chave de API) e
+            <strong>VPS-Deploy-Kit</strong> (CLI que provisiona um bot Node com PM2, Nginx e HTTPS).
+          </p>
+          <div class="stack">
+            <span>TypeScript</span><span>Node.js</span><span>Baileys</span><span>Pix</span><span>Nginx</span>
+          </div>
+        </div>
+
+        <a class="cta" href="https://github.com/devaqn?tab=repositories" target="_blank" rel="noopener">
+          Ver todos os repositórios no GitHub →
+        </a>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+        <div class="tl">
+          <div class="item">
+            <h3>Desenvolvedor Back-End — Freelancer</h3>
+            <p class="when">Trabalho autônomo · Projetos para clientes e produtos próprios</p>
+            <p>
+              Plataformas SaaS multi-tenant com IA, pipelines de RAG com pgvector, CRMs,
+              e-commerces com Mercado Pago e Asaas, apps Flutter com Firebase, bots de
+              WhatsApp e painel DevOps com terminal SSH. Site institucional em produção
+              (integrapsicanalise.com). Deploy em VPS Linux, Vercel e Netlify.
+            </p>
+          </div>
+          <div class="item">
+            <h3>Técnico de Informática</h3>
+            <p class="when">Faculdade Unopar Anhanguera + empresa de fotografia</p>
+            <p>
+              Manutenção preventiva e corretiva de hardware, automação do cadastro de clientes
+              em ERP com Python e Selenium (Conta Azul), configuração de sistemas e suporte
+              técnico.
+            </p>
+          </div>
+          <div class="item">
+            <h3>Freelancer — Serviços de TI</h3>
+            <p class="when">Atendimento particular</p>
+            <p>
+              Configuração de servidores Linux e redes, manutenção de hardware, otimização de
+              desempenho e recuperação de dados.
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
 
-    <script src="script.js"></script>
+    <!-- ================================ sidebar ================================ -->
+    <aside>
+
+      <section>
+        <h2>Habilidades</h2>
+
+        <div class="skill-group">
+          <h4>Back-end &amp; Dados</h4>
+          <div class="chips">
+            <span class="core">Node.js</span><span class="core">TypeScript</span>
+            <span>JavaScript</span><span>Express</span><span>Fastify</span>
+            <span class="core">Python</span><span>FastAPI</span>
+            <span class="core">PostgreSQL</span><span class="core">Supabase</span>
+            <span>pgvector</span><span>Firebase</span><span>Redis</span>
+            <span>MongoDB</span><span>SQLite</span><span>Prisma</span>
+            <span>REST</span><span>WebSocket</span><span>BullMQ</span><span>RabbitMQ</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Front-end &amp; Mobile</h4>
+          <div class="chips">
+            <span class="core">React</span><span class="core">Next.js</span>
+            <span class="core">Flutter</span><span>Dart</span>
+            <span>Tailwind CSS</span><span>shadcn/ui</span>
+            <span>Zustand</span><span>TanStack Query</span><span>Vite</span>
+            <span>HTML5</span><span>CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>IA &amp; Integrações</h4>
+          <div class="chips">
+            <span class="core">Claude</span><span>GPT-4o</span><span>Gemini</span>
+            <span class="core">RAG / Embeddings</span>
+            <span class="core">Baileys</span><span>WhatsApp API</span>
+            <span class="core">Mercado Pago</span><span>Asaas</span>
+            <span>Open Finance (Pluggy)</span><span>Pix</span><span>Stripe</span>
+            <span>Selenium</span><span>Resend</span><span>Twilio</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>DevOps &amp; Arquitetura</h4>
+          <div class="chips">
+            <span class="core">Linux / VPS</span><span class="core">Nginx</span>
+            <span class="core">PM2</span><span>Docker</span>
+            <span>GitHub Actions</span><span>Terraform (AWS)</span>
+            <span>Vercel</span><span>Netlify</span><span>Railway</span>
+            <span>Multi-tenancy (RLS)</span><span>RBAC / JWT</span><span>LGPD</span>
+            <span>Clean Architecture</span><span>Vitest</span><span>Playwright</span>
+            <span>OWASP ZAP</span><span>Git</span><span>Scrum</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Ambientes</h4>
+          <div class="chips">
+            <span>Windows</span><span>Ubuntu Server</span><span>Kali Linux</span>
+            <span>VS Code</span><span>Android Studio</span><span>Bash</span><span>PowerShell</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formação</h2>
+        <div class="card">
+          <h3>UNIFBV</h3>
+          <p class="meta">Bacharelado em Análise e Desenvolvimento de Sistemas</p>
+          <p>2º período — em andamento</p>
+        </div>
+        <div class="card">
+          <h3>SENAI PE</h3>
+          <p class="meta">Técnico em Análise e Desenvolvimento de Sistemas</p>
+          <p>Jun 2024 – Dez 2025</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Certificações</h2>
+        <div class="card">
+          <h3>Profissionalizante Back-End</h3>
+          <p class="meta">TEC — Desenvolvimento de Sistemas</p>
+        </div>
+        <div class="card">
+          <h3>Técnico em Desenvolvimento de Sistemas</h3>
+          <p class="meta">SENAI PE — Areias</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+        <div class="card">
+          <p><strong>Português</strong> — nativo</p>
+          <p style="margin-top:6px"><strong>Inglês</strong> — leitura técnica</p>
+        </div>
+      </section>
+
+    </aside>
+  </div>
+
+  <footer>
+    <p>Pedro Miguel Aquino Costa Gomes · Recife, PE ·
+      <a href="https://github.com/devaqn" style="color:var(--accent)">github.com/devaqn</a>
+    </p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
