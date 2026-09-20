@@ -3,17 +3,16 @@
 **[Ver no ar](https://devaqncurriculo.netlify.app)**
 
 Meu currículo como página única, em HTML, CSS e um punhado de JavaScript. Sem
-framework, sem build: são quatro arquivos que qualquer servidor estático serve.
+framework e sem build: são quatro arquivos que qualquer servidor estático serve.
 
 ## Por que uma página, e não um PDF
 
-Currículo acaba virando PDF de qualquer jeito — mas quem escreve num editor
-perde o controle do resultado. Aqui a página é a fonte, e o PDF sai dela: o
-botão **Salvar em PDF** chama a impressão do navegador, e um bloco
-`@media print` no `style.css` troca o tema escuro por um claro, tira sombras,
-esconde os botões e impede que um card quebre no meio da folha.
-
-Assim o mesmo arquivo serve para os dois usos, sem manter duas versões.
+Currículo acaba virando PDF de qualquer jeito, mas quem escreve num editor
+perde o controle do resultado. Aqui a página é a fonte e o PDF sai dela: o botão
+Salvar em PDF chama a impressão do navegador, e um bloco `@media print` no
+`style.css` troca o tema escuro por um claro, tira sombras, esconde os botões e
+impede que um card quebre no meio da folha. Um arquivo só, sem manter duas
+versões.
 
 ## Estrutura
 
@@ -26,7 +25,7 @@ Assim o mesmo arquivo serve para os dois usos, sem manter duas versões.
 
 ## Rodando
 
-Não precisa instalar nada — abra o `index.html` no navegador. Para ver com
+Não precisa instalar nada: abra o `index.html` no navegador. Para ver com
 servidor, o que evita surpresas com caminho relativo:
 
 ```bash
@@ -36,9 +35,9 @@ python -m http.server 8000
 ## Identidade visual
 
 Mesma paleta do meu [perfil no GitHub](https://github.com/devaqn) e do
-[portfólio](https://portfoliodevaqn.netlify.app): gradiente escuro de `#0f0c29`
-a `#302b63`, acento violeta `#a78bfa`, e as fontes Space Grotesk e JetBrains
-Mono. As três propriedades se parecem de propósito.
+[portfólio](https://portfoliodevaqn.netlify.app), de propósito: gradiente escuro
+de `#0f0c29` a `#302b63`, acento violeta `#a78bfa`, e as fontes Space Grotesk e
+JetBrains Mono.
 
 ## Licença
 
