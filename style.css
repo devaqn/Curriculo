@@ -12,6 +12,7 @@
   --accent-strong: #8b5cf6;
   --text: #ece9f8;
   --muted: #a49fc0;
+  --heading: #ffffff;
   --line: rgba(167, 139, 250, 0.16);
   --line-strong: rgba(167, 139, 250, 0.34);
   --radius: 14px;
@@ -54,6 +55,7 @@ body {
   display: flex; align-items: center; gap: 30px; flex-wrap: wrap;
   position: relative; z-index: 1;
 }
+.hero-inner > div { flex: 1 1 320px; min-width: 0; }
 .avatar {
   width: 112px; height: 112px; border-radius: 50%;
   object-fit: cover; flex-shrink: 0;
@@ -114,7 +116,7 @@ h2::before {
 .card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .card h3 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1rem; margin: 0 0 3px; color: #fff;
+  font-size: 1rem; margin: 0 0 3px; color: var(--heading);
 }
 .card .meta { font-size: .8rem; color: var(--accent); margin: 0 0 9px; font-weight: 500; }
 .card p { margin: 0; color: var(--muted); font-size: .89rem; }
@@ -127,6 +129,22 @@ h2::before {
   color: #17122e; background: var(--accent);
   padding: 2px 7px; border-radius: 4px; margin-bottom: 7px; font-weight: 700;
 }
+
+/* Nome de repositorio dentro do texto leva ao codigo. */
+.card a {
+  color: var(--accent); text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+}
+.card a:hover { border-bottom-color: var(--accent); }
+
+/* Numeros medidos no GitHub, um por linha. */
+.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.facts li { position: relative; padding-left: 16px; color: var(--muted); font-size: .89rem; }
+.facts li::before {
+  content: ""; position: absolute; left: 0; top: .66em;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+}
+.card .note { margin-top: 12px; font-size: .75rem; line-height: 1.5; }
 
 /* ------------------------------------------------------------------ tags */
 .stack { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 11px; }
@@ -153,7 +171,7 @@ h2::before {
 /* Marca as tecnologias centrais, para o olho pousar nelas primeiro. */
 .chips span.core {
   background: rgba(167, 139, 250, 0.16);
-  border-color: var(--line-strong); color: #fff; font-weight: 500;
+  border-color: var(--line-strong); color: var(--heading); font-weight: 500;
 }
 
 /* ---------------------------------------------------------------- stats */
@@ -200,28 +218,47 @@ footer {
 }
 
 /* ---------------------------------------------------------------- print */
-/* Curriculo existe para ser impresso. Tema claro, sem sombra, sem quebrar
-   card no meio da pagina. */
+/* Curriculo existe para ser impresso: tema claro, sem sombra, sem quebrar
+   card no meio da pagina. A largura util de uma folha A4 fica abaixo do
+   breakpoint de 880px; sem tratar isso o PDF sai em coluna unica, com
+   espaco vazio e cinco paginas. Cores de
+   titulo passam por variavel porque #fixo sumia no papel branco. */
 @media print {
   :root {
     --bg: #fff; --card: #fff;
-    --text: #14121f; --muted: #45415c;
+    --text: #14121f; --muted: #45415c; --heading: #14121f;
     --accent: #5b3fd6; --accent-strong: #5b3fd6;
     --line: #d9d5ea; --line-strong: #b9b2dd;
     --shadow: none;
   }
-  @page { margin: 12mm; }
-  body { font-size: 10.5pt; line-height: 1.45; }
-  .hero { background: #fff; border-bottom: 2px solid var(--accent); padding: 0 0 14px; }
-  .hero::after, .cta { display: none; }
-  .hero-inner, .wrap { padding: 0; max-width: none; }
-  .avatar { width: 84px; height: 84px; box-shadow: none; }
-  .card, .stat { break-inside: avoid; box-shadow: none; }
+  @page { margin: 10mm; }
+  body { font-size: 9pt; line-height: 1.35; }
+  .hero { background: #fff; border-bottom: 2px solid var(--accent); padding: 0 0 8px; }
+  .hero::after, .cta, footer { display: none; }
+  .contact li:has(#btn-imprimir) { display: none; }
+  .hero-inner { padding: 0; max-width: none; gap: 18px; }
+  .wrap { padding: 0; max-width: none; }
+  .avatar { width: 74px; height: 74px; box-shadow: none; }
+  .contact a, .contact li > span { padding: 3px 9px; font-size: 8.4pt; background: none; border: 1px solid var(--line); }
+  .stats { margin: 8px 0 8px; gap: 8px; }
+  .stat { padding: 4px 6px; break-inside: avoid; }
+  .stat b { font-size: 1.15rem; }
+  /* Colunas continuas em vez de grid: a lateral e bem mais curta que o texto
+     principal, e o grid deixava metade da pagina vazia. */
+  .layout { display: block; column-count: 2; column-gap: 18px; margin-top: 10px; }
+  section { margin-bottom: 5px; }
+  h2 { font-size: .95rem; margin-bottom: 6px; padding-bottom: 3px; break-after: avoid; }
+  .card { padding: 6px 10px; margin-bottom: 5px; box-shadow: none; break-inside: avoid; }
   .card.featured { background: #fff; }
   .card:hover { transform: none; }
-  section { margin-bottom: 16px; break-inside: avoid-page; }
-  .layout { gap: 22px; margin-top: 18px; }
-  .contact a { border: 1px solid var(--line); background: none; }
+  .card h3 { font-size: .9rem; }
+  .card p, .facts li { font-size: 8.3pt; }
+  .card .note { font-size: 7.2pt; margin-top: 6px; }
+  .stack { margin-top: 5px; gap: 3px; }
+  .stack span { font-size: 6.4pt; padding: 0 4px; }
+  .skill-group { margin-bottom: 6px; break-inside: avoid; }
+  .chips span { font-size: 7.3pt; padding: 1px 5px; }
   .chips span.core { background: #efeafd; }
-  footer { display: none; }
+  .tl .item { margin-bottom: 6px; break-inside: avoid; }
+  .tl p { font-size: 8.3pt; margin-top: 3px; }
 }
